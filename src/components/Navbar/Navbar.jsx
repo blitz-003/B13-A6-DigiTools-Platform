@@ -1,7 +1,7 @@
 import React from "react";
 import { FiShoppingCart } from "react-icons/fi";
 
-const Navbar = () => {
+const Navbar = ({ cart }) => {
   return (
     <div className="navbar bg-base-100 shadow-sm px-20">
       <div className="navbar-start">
@@ -70,7 +70,11 @@ const Navbar = () => {
 
       <div className="navbar-end gap-x-2">
         <div className="indicator">
-          <span className="indicator-item badge badge-primary badge-xs">3</span>
+          {cart.length > 0 && (
+            <span className="indicator-item badge badge-primary badge-xs">
+              {cart.length}
+            </span>
+          )}
           <a className="btn btn-ghost btn-circle">
             <FiShoppingCart className="text-lg" />
           </a>
