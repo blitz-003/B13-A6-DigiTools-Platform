@@ -67,10 +67,14 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+
       <div className="navbar-end gap-x-2">
-        <a className="btn btn-ghost rounded-">
-          <FiShoppingCart />
-        </a>
+        <div className="indicator">
+          <span className="indicator-item badge badge-primary badge-xs">3</span>
+          <a className="btn btn-ghost btn-circle">
+            <FiShoppingCart className="text-lg" />
+          </a>
+        </div>
         <a className="btn btn-ghost">Login</a>
         <a className="btn rounded-full bg-linear-to-r from-indigo-500 to-purple-500 text-white">
           Get Started
