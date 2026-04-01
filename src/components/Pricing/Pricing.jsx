@@ -5,8 +5,8 @@ const Pricing = () => {
     <div className="p-10 bg-base-200">
       <div className="text-center">
         <div>
-          <h1>Simple, Transparent Pricing</h1>
-          <p>
+          <h1 className="text-4xl font-bold">Simple, Transparent Pricing</h1>
+          <p className="my-6 text-md text-gray-600">
             Choose the plan that fits your needs. Upgrade or downgrade anytime.
           </p>
         </div>
