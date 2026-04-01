@@ -1,6 +1,9 @@
 import React from "react";
+import { use } from "react";
 
+const fetchProducts = fetch("/data.json").then((res) => res.json());
 const Products = () => {
+  const products = use(fetchProducts);
   return (
     <div className="p-10 bg-base-100">
       <div className="text-center">

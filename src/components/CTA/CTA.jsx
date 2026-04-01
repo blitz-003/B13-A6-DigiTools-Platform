@@ -13,11 +13,11 @@ const CTA = () => {
             work smarter.
           </p>
           <p>Start your free trial today.</p>
-          <div className="flex justify-center items-center my-4">
-            <button className="btn btn-primary mx-6 rounded-full">
+          <div className="flex justify-center items-center my-4 gap-4">
+            <button className="btn btn-primary rounded-full">
               Explore Products
             </button>
-            <button className="btn btn-primary mx-6 rounded-full">
+            <button className="btn btn-primary rounded-full">
               View Pricing
             </button>
           </div>
