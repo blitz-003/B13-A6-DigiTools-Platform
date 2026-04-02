@@ -70,7 +70,7 @@ const ProductCard = ({ product, cart, setCart }) => {
           <button
             className="btn btn-primary btn-block text-white"
             onClick={handleAdd}
-            disabled={isAdded} // <-- Disable if already added
+            disabled={isAdded} 
           >
             {isAdded ? "Added" : product.button}
           </button>
