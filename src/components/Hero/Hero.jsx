@@ -6,10 +6,10 @@ const Hero = () => {
       <div className="hero-content flex-col lg:flex-row-reverse lg:gap-32">
         <img src="./assets/banner.png" />
         <div className="lg:max-w-xl">
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-3xl md:text-5xl font-bold">
             Supercharge Your Digital Workflow
           </h1>
-          <p className="py-6">
+          <p className="text-md py-6">
             Access premium AI tools, design assets, templates, and productivity
             software—all in one place. Start creating faster today. Explore
             Products

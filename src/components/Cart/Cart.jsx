@@ -1,7 +1,11 @@
-import React from "react";
+import { toast } from "react-toastify";
 
 const Cart = ({ cart, setCart }) => {
   const handleRemove = (id) => setCart(cart.filter((item) => item.id !== id));
+  const handleCheckout = () => {
+    setCart([]);
+    toast.success("Checkout successful! Thank you for your purchase.");
+  };
 
   // Safely convert price to number
   const total = cart.reduce((sum, item) => {
@@ -12,7 +16,7 @@ const Cart = ({ cart, setCart }) => {
   return (
     <div className="w-full flex justify-center mt-6">
       <div className="card w-full shadow-lg p-6 bg-base-100 flex flex-col gap-4">
-        {/* Your cart heading */}
+        {/* Cart heading */}
         <h2 className="text-2xl font-semibold mb-4">Your Cart</h2>
 
         {cart.length === 0 ? (
@@ -42,7 +46,8 @@ const Cart = ({ cart, setCart }) => {
 
               <button
                 onClick={() => handleRemove(item.id)}
-                className="text-pink-500 p-0"
+                className="text-pink-500 p-0 hover:text-pink-700 cursor-pointer"
+                title="Remove this item"
               >
                 Remove
               </button>
@@ -51,10 +56,19 @@ const Cart = ({ cart, setCart }) => {
         )}
 
         {cart.length > 0 && (
-          <div className="flex justify-between items-center w-full mt-6">
-            <h1 className="font-semibold">Total</h1>
-            <p className="font-bold text-lg">${total.toFixed(2)}</p>
-          </div>
+          <>
+            <div className="flex justify-between items-center w-full mt-6">
+              <h1 className="font-semibold">Total</h1>
+              <p className="font-bold text-lg">${total.toFixed(2)}</p>
+            </div>
+
+            <button
+              onClick={handleCheckout}
+              className="btn btn-primary mt-4 w-full hover:bg-blue-700"
+            >
+              Proceed to Checkout
+            </button>
+          </>
         )}
       </div>
     </div>

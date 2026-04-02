@@ -1,9 +1,13 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const ProductCard = ({ product, cart, setCart }) => {
   const handleAdd = () => {
     const exists = cart.find((item) => item.id === product.id);
-    if (!exists) setCart([...cart, product]);
+    if (!exists) {
+      setCart([...cart, product]);
+      toast.success(`${product.title} added to cart!`);
+    }
   };
 
   // Badge color
@@ -64,7 +68,7 @@ const ProductCard = ({ product, cart, setCart }) => {
 
         <div className="mt-6">
           <button
-            className="btn btn-primary btn-block"
+            className="btn btn-primary btn-block text-white"
             onClick={handleAdd}
             disabled={isAdded} // <-- Disable if already added
           >
