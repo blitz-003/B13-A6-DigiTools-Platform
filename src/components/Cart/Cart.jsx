@@ -28,11 +28,7 @@ const Cart = ({ cart, setCart }) => {
               <div className="flex gap-6 items-center w-full">
                 <div className="avatar">
                   <div className="w-12 rounded-full bg-white flex items-center justify-center">
-                    <img
-                      src="/assets/products/design-tool.png"
-                      alt=""
-                      className="w-6 h-6"
-                    />
+                    <img src={item.img} alt="" className="w-6 h-6" />
                   </div>
                 </div>
 

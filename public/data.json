@@ -10,7 +10,8 @@
       "50+ writing templates",
       "Grammar checker"
     ],
-    "button": "Buy Now"
+    "button": "Buy Now",
+    "img": "/assets/products/img-1.png"
   },
   {
     "id": 2,
@@ -23,7 +24,8 @@
       "Monthly updates",
       "Commercial license"
     ],
-    "button": "Buy Now"
+    "button": "Buy Now",
+    "img": "/assets/products/img-2.png"
   },
   {
     "id": 3,
@@ -36,7 +38,8 @@
       "Commercial use",
       "No attribution"
     ],
-    "button": "Buy Now"
+    "button": "Buy Now",
+    "img": "/assets/products/img-3.png"
   },
   {
     "id": 4,
@@ -49,7 +52,8 @@
       "API access",
       "Custom workflows"
     ],
-    "button": "Buy Now"
+    "button": "Buy Now",
+    "img": "/assets/products/img-4.png"
   },
   {
     "id": 5,
@@ -62,7 +66,8 @@
       "ATS optimization",
       "Export to PDF"
     ],
-    "button": "Buy Now"
+    "button": "Buy Now",
+    "img": "/assets/products/img-5.png"
   },
   {
     "id": 6,
@@ -75,6 +80,7 @@
       "Scheduler included",
       "Analytics dashboard"
     ],
-    "button": "Buy Now"
+    "button": "Buy Now",
+    "img": "/assets/products/img-6.png"
   }
 ]
