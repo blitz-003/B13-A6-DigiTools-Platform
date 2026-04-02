@@ -14,10 +14,10 @@ const CTA = () => {
           </p>
           <p>Start your free trial today.</p>
           <div className="flex justify-center items-center my-4 gap-4">
-            <button className="btn btn-primary rounded-full text-white">
+            <button className="btn btn-primary rounded-full text-indigo-600 bg-white border-white hover:border-indigo-600 hover:text-white hover:bg-primary">
               Explore Products
             </button>
-            <button className="btn btn-primary rounded-full text-white">
+            <button className="btn btn-primary btn-outline rounded-full text-white border-white hover:border-indigo-600">
               View Pricing
             </button>
           </div>
