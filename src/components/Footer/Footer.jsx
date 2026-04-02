@@ -11,6 +11,7 @@ const Footer = () => {
           </p>
           <p>Work smarter with our suite of powerful tools.</p>
         </aside>
+
         <nav>
           <h6 className="footer-title">Products</h6>
           <a className="link link-hover">Features</a>

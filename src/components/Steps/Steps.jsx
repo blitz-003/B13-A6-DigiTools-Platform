@@ -8,7 +8,7 @@ const Steps = () => {
         Start using premium digital tools in minutes, not hours.
       </p>
 
-      <div className="flex gap-4 bg-base-200 max-w-[70%] mx-auto mt-4">
+      <div className="flex flex-col md:flex-row gap-4 bg-base-200 max-w-[70%] mx-auto mt-4">
         <div className="card bg-base-100 w-96 shadow-sm p-4">
           <div className="w-full">
             <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">

@@ -10,7 +10,9 @@ const Products = ({ cart, setCart }) => {
   const [activeTab, setActiveTab] = useState("products");
 
   return (
-    <div className="p-10 bg-base-100">
+    <div className="p-10 bg-base-100 rounded-2xl">
+      {" "}
+      {/* Outer div rounded */}
       <div className="text-center">
         <h1 className="text-4xl font-bold">Premium Digital Tools</h1>
         <p className="pt-4 text-md text-gray-600">
@@ -21,11 +23,15 @@ const Products = ({ cart, setCart }) => {
         {/* Tabs */}
         <div
           role="tablist"
-          className="tabs tabs-box max-w-[30%] mx-auto justify-center my-6"
+          className="tabs tabs-box max-w-[50%] md:max-w-[25%] mx-auto justify-center my-8 rounded-full overflow-hidden border border-gray-300 p-0"
         >
           <button
             role="tab"
-            className={`tab w-[50%] ${activeTab === "products" ? "tab-active" : ""}`}
+            className={`tab w-[50%] rounded-full text-md font-bold ${
+              activeTab === "products"
+                ? "bg-linear-to-r from-indigo-500 to-purple-500 text-white"
+                : "text-gray-700"
+            }`}
             onClick={() => setActiveTab("products")}
           >
             Products
@@ -33,16 +39,19 @@ const Products = ({ cart, setCart }) => {
 
           <button
             role="tab"
-            className={`tab w-[50%] ${activeTab === "cart" ? "tab-active" : ""}`}
+            className={`tab w-[50%] rounded-full text-md font-bold ${
+              activeTab === "cart"
+                ? "bg-linear-to-r from-indigo-500 to-purple-500 text-white"
+                : "text-gray-700"
+            }`}
             onClick={() => setActiveTab("cart")}
           >
             Cart {cart.length > 0 && `(${cart.length})`}
           </button>
         </div>
       </div>
-
       {activeTab === "products" ? (
-        <div className="grid grid-cols-3 justify-items-center items-center gap-y-8 max-w-[80%] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center items-center gap-y-8 max-w-[80%] mx-auto">
           {products.map((product) => (
             <ProductCard
               key={product.id}

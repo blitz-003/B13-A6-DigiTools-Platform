@@ -45,7 +45,12 @@ const Navbar = ({ cart }) => {
           </ul>
         </div>
         <a>
-          <img src="../../assets/logo.png" alt="" srcset="" class="h-7" />
+          <img
+            src="../../assets/logo.png"
+            alt=""
+            srcset=""
+            class="h-6 md:h-7"
+          />
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -80,7 +85,7 @@ const Navbar = ({ cart }) => {
           </a>
         </div>
         <a className="btn btn-ghost">Login</a>
-        <a className="btn rounded-full bg-linear-to-r from-indigo-500 to-purple-500 text-white">
+        <a className="btn rounded-full bg-linear-to-r from-indigo-500 to-purple-500 text-white hidden md:flex justify-center items-center">
           Get Started
         </a>
       </div>

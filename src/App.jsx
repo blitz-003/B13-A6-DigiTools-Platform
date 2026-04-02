@@ -1,6 +1,8 @@
 import React, { useState, Suspense } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Products from "./components/Products/Products";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import "./App.css";
 import Hero from "./components/Hero/Hero";
@@ -29,6 +31,7 @@ function App() {
       <Pricing></Pricing>
       <CTA />
       <Footer></Footer>
+      <ToastContainer position="top-right" autoClose={3000} />
     </>
   );
 }

@@ -11,7 +11,7 @@ const Pricing = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-3 justify-items-center items-center gap-y-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center items-center gap-y-4">
         <div className="card w-96 bg-base-100 shadow-sm">
           <div className="card-body">
             {/* <span className="badge badge-xs badge-warning">Most Popular</span> */}
@@ -90,7 +90,7 @@ const Pricing = () => {
               </li>
             </ul>
             <div className="mt-6">
-              <button className="btn btn-primary btn-block rounded-full">
+              <button className="btn btn-primary btn-block rounded-full text-white">
                 Get Started Free
               </button>
             </div>
@@ -258,7 +258,7 @@ const Pricing = () => {
               </li>
             </ul>
             <div className="mt-6">
-              <button className="btn btn-primary btn-block rounded-full">
+              <button className="btn btn-primary btn-block rounded-full text-white">
                 Contact Sales
               </button>
             </div>
