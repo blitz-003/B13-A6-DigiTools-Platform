@@ -25,12 +25,9 @@ const ProductCard = ({ product, cart, setCart }) => {
         )}
 
         <div className="avatar mb-4">
-          <div className="w-12 rounded-full bg-primary flex items-center justify-center">
-            <img
-              src="/assets/products/design-tool.png"
-              alt=""
-              className="w-6 h-6"
-            />
+          <div className="w-12 rounded-full shadow-lg bg-white flex items-center justify-center">
+            {console.log(product.img)}
+            <img src={product.img} alt="" className="w-6 h-6" />
           </div>
         </div>
 

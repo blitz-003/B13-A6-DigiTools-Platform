@@ -19,7 +19,7 @@ const Steps = () => {
           <figure className="px-10 pt-10">
             <div className="avatar">
               <div className="w-28 rounded-full bg-primary/20 flex items-center justify-center">
-                <img src="../../assets/user.png" alt="" className="w-16 h-16" />
+                <img src="./assets/user.png" alt="" className="w-16 h-16" />
               </div>
             </div>
           </figure>
@@ -41,11 +41,7 @@ const Steps = () => {
           <figure className="px-10 pt-10">
             <div className="avatar">
               <div className="w-28 rounded-full bg-primary/20 flex items-center justify-center">
-                <img
-                  src="../../assets/package.png"
-                  alt=""
-                  className="w-16 h-16"
-                />
+                <img src="./assets/package.png" alt="" className="w-16 h-16" />
               </div>
             </div>
           </figure>
@@ -64,11 +60,7 @@ const Steps = () => {
           <figure className="px-10 pt-10">
             <div className="avatar">
               <div className="w-28 rounded-full bg-primary/20 flex items-center justify-center">
-                <img
-                  src="../../assets/rocket.png"
-                  alt=""
-                  className="w-16 h-16"
-                />
+                <img src="./assets/rocket.png" alt="" className="w-16 h-16" />
               </div>
             </div>
           </figure>
