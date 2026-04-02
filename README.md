@@ -1,161 +1,45 @@
-# 🎯 A-6 Digital Tools Buying Website
+# 🚀 Digi Tools
 
-## 📅 Deadlines
-- 60 Marks: 1st April, 2026 (11:59 PM ⏱️)  
-- 50 Marks: No Deadline for 50 marks.  
-- 30 Marks: Any time after 1st April.  
+## 🌟 Description
 
----
+**Digi Tools** is a modern subscription-based platform that provides access to a curated collection of powerful AI tools. It offers a clean UI, smooth user experience, and flexible plans to help users explore and utilize AI efficiently.
 
 ---
 
-## 🚫 Key Rules
-- Don't ask about mark distribution in the group. We don't provide it.  
-- Don't post assignment feedback after you receive it. If you face any problem or have any complaints then join a support session and discuss it.  
-- Don’t use any lorem ipsum text, rather use relevant and meaningful text content.  
-- You can change the color if you want but remember that it should not be a gobindo color.  
-- Use at least 8 git commits with meaningful messages.  
+## 🛠️ Technologies Used
+
+- ⚛️ React.js
+- 🎨 Tailwind CSS + DaisyUI
+- 💻 JavaScript (ES6+)
+- 🔔 React-Toastify (NPM Package)
+- 📦 JSON (for product data)
 
 ---
 
-## 🧩 Features & Requirements
+## ✨ Features
 
-### 🧭 Navbar
-- Navbar designed according to Figma  
-- Cart icon displayed (initially empty)  
+### 1. 🛒 Smart Subscription Plans
 
----
+Users can explore different pricing tiers (Free, Pro, Enterprise) and choose plans based on their needs.
 
-### 🎯 Banner
-- Banner section includes:
-  - Heading  
-  - Description text  
-  - Image  
-  - Buttons  
+### 2. 🔔 Real-time Notifications
 
----
+Integrated **React-Toastify** to provide instant feedback when users add items to cart or complete checkout.
 
-### 📊 Stats Section
-- Stats section designed based on Figma  
+### 3. 🎯 Clean & Responsive UI
+
+Built with **Tailwind CSS** and **DaisyUI**, ensuring a modern, fully responsive design across all devices.
 
 ---
 
-### 🔄 Main Section & Toggling
-- Design  2 buttons at the center of the section.
-- By clicking Cart,  the cart section will be shown. By default it will show an empty message.
-- By Clicking  Product,  the Products section will be shown. 
-- By Default product section will be visible. 
+## 📌 Future Improvements
 
-
----
-
-### 📦 JSON Data
-Create 6–10 product data with:
-- id  
-- name  
-- description  
-- price  
-- period (one-time / monthly / yearly)  
-- tag ( example- popular, new, best seller) 
-- tagType ( example- popular, new, best seller) 
-- features ( array. Example:  ["100+ templates", "ATS optimization", "Export to PDF"] )   
-- icon  
-
-🚩 You can take help of AI Systems for generating a JSON Data
+- 🔐 Authentication system (Login/Signup)
+- 💳 Payment gateway integration
+- 📊 User dashboard with usage analytics
 
 ---
 
-### 🃏 Product Cards
-- Display all products in a 3-column layout  
-- Each card includes:
-  - Name  
-  - Description  
-  - Price  
-  - Period  
-  - TagType  
-  - Features  
-  - Icon  
-  - Buy Now button  
+## 💡 Author
 
----
-
-### 🛒 Cart Functionality
-- Show selected products in cart  
-- Display total product count in navbar  
-- Cart layout: 1 column  
-- Each cart item includes:
-  - Name  
-  - Icon  
-  - Price  
-  - Remove button  
-- "Proceed to Checkout" button:
-  - Clears all cart items  
-
----
-
-### 🪜 Steps Section
-- Designed according to Figma  
-
----
-
-### 💰 Pricing Section
-- Designed according to Figma  
-
----
-
-### 🦶 Footer
-- Footer designed based on Figma  
-
----
-
-### 📱 Responsive Design
-- Fully responsive across devices  
-- Follow standard responsive practices  
-
----
-
-# 🚀 Challenges Part 
-
-### 🔔 Use a NPM Package React-Toastify
-- Use react toastify to show all the alerts of add to cart, remove, and proceed to checkout. 
-
-
----
-
-### ❌ Implement Selected product remove functionality 
-- On Click Remove Button product will remove from cart section.
-
-- In this section the total of the selected products ( added on the carts) will show here. 
-- Proceed to checkout button will remove all the products from the cart  
-
-
-
----
-
-### 📂 GitHub Repository
-- Create Beautiful Github Readme with following description
-    - Name of your  Project
-    - A little Description
-    - Technology that you use
-    - 3 Features about your project. 
- 
-
----
-## Optional Features: 
-
-1. When you click on a product it increases the cart count in the Navbar and clears it when you click on the proceed to checkout button. 
-2. When clicking on the Buy now Button it shows an “Added to cart” message on the button. 
-
-
-## ⚙️ Technologies Used
-- React.js  
-- Tailwind CSS, DaisyUI 
-- JavaScript (ES6+)  
-- React-Toastify (NPM Package)  
-- JSON (for product data)  
-
----
-
-## 📤 What to submit:
-- GitHub Repository Link:
-- Live Site Link:
+Made with ❤️ by **Elman**
